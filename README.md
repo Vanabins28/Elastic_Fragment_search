@@ -30,28 +30,6 @@ Elasticsearch is an open-source, distrubuted, RESTful search and analytics engin
 ![iris](https://raw.githubusercontent.com/Vanabins28/db_network/master/images/Drug_example.png)
 
 
-Applications in Drug Discovery
-----------
-
-This repo describes my work in applying graph and network based methods to drug discovery. Using data from public sources like the ChemBL, MedDRA, UniProt, and OMIM, we can store the complex relationships between these different data sources as a graph database and apply the methods mentioned above to help advance drug discovery.
-
-
-Usage
----------
-
-I have prepared tutorials in jupyter notebooks that will describe some techniques and applications of graph network.
-
-0) How to extract data from the ChemBL 24 Postgresql database using psycopg2 and save the protein-ligand interactions in a networkx multigraph. The ChemBL 24 database has a lot of complex information related to protein-ligand assays as well as other information related to individual proteins. [Dataset Creation](https://github.com/Vanabins28/db_network/blob/master/Tutorial_0_Loading_data_into_Graph.ipynb) 
-
-1) How to load the dataset and extract a smaller sub-set based on some selection criteria. Using this smaller sub-set we can generate a training/test set to train and validate a multi-label, random forest classification model that can predict which molecules will interact with which protein. [Dataset Preperation](https://github.com/Vanabins28/db_network/blob/master/Tutorial_1_Graphs_and_Classification.ipynb)
-
-2) How to select and visualize the drugs that interact with a sub-set of protein targets. [Visualization](https://github.com/Vanabins28/db_network/blob/master/Tutorial_2_Graphs_and_Visualization.ipynb)
-
-An example of the visualization is shown below. Here we see the drugs (green nodes) that interact with three target proteins (red nodes). The visualization can immediately reveal drug molecules that can simultaneously interact with more than one protein as shown by green nodes that have two edges connecting to two red nodes. These dual-targeting drugs are especially interesting and can be the starting point of a drug discovery campaign.
-
-![iris](https://raw.githubusercontent.com/Vanabins28/db_network/master/images/P2.png)
-
-
 
 Requires
 --------
